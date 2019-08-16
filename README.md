@@ -29,6 +29,17 @@
  &ensp; /reducers <br>
  &ensp; /views <br>
 
+- Separate js files for styles
+  - i.e 
+  ```
+    - /views
+      - /counter
+        - CounterView.js
+        - styles.js 
+  ```
+
+  # Documentations
+  - Implementation docs and progress [here](documentations/README.md)
 
 # Redux Architecture
 ![](images/README_2019-08-15-14-21-28.png)

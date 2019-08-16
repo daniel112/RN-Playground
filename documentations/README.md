@@ -1,7 +1,8 @@
 # Documentations
 
-# Skills Learned
+# Skills Practiced
 - Redux
 - React-native redux code structure
-- Navigation (TODO)
+- [Navigation](documentations/navigation/navigation.md)
 - Native Modules (TODO)
+- Run on device (TODO)
