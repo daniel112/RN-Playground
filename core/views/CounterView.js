@@ -29,10 +29,7 @@ class CounterView extends Component {
               <Text style={{ fontSize:20 }}>Increase</Text>
             </TouchableOpacity>
 
-            {/* model state */}
-            <TouchableOpacity>
-              <Text style={{ fontSize:20 }}>{this.props.counter}</Text>
-            </TouchableOpacity>
+            <Text style={{ fontSize:20 }}>{this.props.counter}</Text>
 
             <TouchableOpacity onPress={() => this.props.decreaseCounter()}>
               <Text style={{ fontSize:20 }}>Decrease</Text>
@@ -62,6 +59,7 @@ function mapStateToProps(state) {
     // this 'counter' will tie into this.props
     // so we can call it with this.props.counter
     // Q: can we reduce this down to 'state.counter' somehow?
+    // 'CounterReducer' comes from /reducer/index.js
     counter: state.CounterReducer.counter
   }
 }
