@@ -38,5 +38,8 @@
         - styles.js 
   ```
 
+  # Documentations
+  - Implementation docs and progress [here](documentations/README.md)
+
 # Redux Architecture
 ![](images/README_2019-08-15-14-21-28.png)

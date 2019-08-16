@@ -13,4 +13,11 @@ Helpful read:
 
 # Implementation
 - [React Native Navigation (RNN)](documentations/navigation-RNN.md)
-- React Navigation (RN) - not implemented here
+- React Navigation (RN) - not implemented for this project
+
+# TODOs:
+- Utilize redux to separate out logic
+- Separate out registration portion from index.js
+- Remove the 'text' on back navigation
+- setup for Android
+- better 'setRoot' layout
