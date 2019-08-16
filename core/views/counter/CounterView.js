@@ -3,14 +3,13 @@ import React, { Fragment, Component } from "react"
 import {
     View,
     Text,
-    StyleSheet,
     TouchableOpacity,
     StatusBar,
     SafeAreaView
-} from "react-native";
+} from "react-native"
 import { connect } from 'react-redux'
-import { CounterAction } from '../actions'
-
+import { CounterAction } from '../../actions'
+import { styles } from './styles'
 // Props info: https://www.robinwieruch.de/react-pass-props-to-component/#react-props
 // Q: How do props get transferred from view to view?
 // doesnt seem like you have to instantiate the props
@@ -43,14 +42,6 @@ class CounterView extends Component {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-      flex: 1,
-      alignItems: 'center',
-      justifyContent: 'center'
-  }
-})
 
 function mapStateToProps(state) {
   console.log("MAPSTATETOPROPS: State")
