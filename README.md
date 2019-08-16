@@ -9,7 +9,7 @@
 - React redux - `npm install react redux`
 - [KeyMirror](https://www.npmjs.com/package/keymirror) - `npm install keymirror`
 - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) - `npm install redux-thunk`
-
+- React Native Navigation - `npm install react-native-navigation`
 # Known issues
 - Cannot connect to browser debugger -https://stackoverflow.com/questions/55131047/react-native-debugger-error-cannot-get-debugger-ui
 
@@ -38,8 +38,8 @@
         - styles.js 
   ```
 
-  # Documentations
-  - Implementation docs and progress [here](documentations/README.md)
+# Documentations
+- Implementation docs and progress [here](documentations/README.md)
 
 # Redux Architecture
 ![](images/README_2019-08-15-14-21-28.png)
