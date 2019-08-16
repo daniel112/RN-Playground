@@ -7,6 +7,8 @@
 # Modules Installed
 - Redux - `npm install redux`
 - React redux - `npm install react redux`
+- [KeyMirror](https://www.npmjs.com/package/keymirror) - `npm install keymirror`
+- [Redux-Thunk](https://github.com/reduxjs/redux-thunk) - `npm install redux-thunk`
 
 # Known issues
 - Cannot connect to browser debugger -https://stackoverflow.com/questions/55131047/react-native-debugger-error-cannot-get-debugger-ui

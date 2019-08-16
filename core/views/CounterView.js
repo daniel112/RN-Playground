@@ -1,10 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
 
 import React, { Fragment, Component } from "react"
 import {
@@ -16,12 +9,16 @@ import {
     SafeAreaView
 } from "react-native";
 import { connect } from 'react-redux'
+import { CounterAction } from '../actions'
 
-
-
+// Props info: https://www.robinwieruch.de/react-pass-props-to-component/#react-props
+// Q: How do props get transferred from view to view?
+// doesnt seem like you have to instantiate the props
 class CounterView extends Component {
 
   render() {
+    console.log("----Props-----")
+    console.log(this.props)
     return (
       <Fragment>
       <StatusBar barStyle="dark-content" />
@@ -50,7 +47,6 @@ class CounterView extends Component {
   }
 }
 
-
 const styles = StyleSheet.create({
   container: {
       flex: 1,
@@ -59,24 +55,18 @@ const styles = StyleSheet.create({
   }
 })
 
-
 function mapStateToProps(state) {
+  console.log("MAPSTATETOPROPS: State")
+  console.log(state)
   return {
-    counter: state.counter
+    // this 'counter' will tie into this.props
+    // so we can call it with this.props.counter
+    // Q: can we reduce this down to 'state.counter' somehow?
+    counter: state.CounterReducer.counter
   }
 }
-
-// Dispatcher
-//  uses the redux dispatch method to send the message
-//  usually pass in a state/action
-function mapDispatchToProps(dispatch) {
-  return {
-    increaseCounter: () => dispatch({type: 'INCREASE_COUNTER'}),
-    decreaseCounter: () => dispatch({type: 'DECREASE_COUNTER'})
-
-  }
-}
-
 // conects the props to the view
 // connects the state and dispatcher methods
-export default connect(mapStateToProps, mapDispatchToProps)(CounterView) 
+// params:
+//    CounterAction =  {increaseNumber, decreaseNumber}
+export default connect(mapStateToProps, CounterAction)(CounterView) 
