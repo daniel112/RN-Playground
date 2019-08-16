@@ -12,7 +12,7 @@ Helpful read:
 - [React Navigation vs React Native](https://blog.logrocket.com/react-navigation-vs-react-native-navigation-which-is-right-for-you-3d47c1cd1d63/)
 
 # Implementation
-- [React Native Navigation (RNN)](documentations/navigation-RNN.md)
+- [React Native Navigation (RNN)](documentations/navigation/navigation-RNN.md)
 - React Navigation (RN) - not implemented for this project
 
 # TODOs:
