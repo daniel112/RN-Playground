@@ -1,5 +1,5 @@
 
-import React, { Component } from "react"
+import React, { Component } from 'react'
 import {
     View,
     Text,
@@ -11,11 +11,13 @@ import { Navigation } from 'react-native-navigation'
 class FirstView extends Component {
 
   render() {
+    console.log("----First View Props-----")
+    console.log(this.props)
     return (
       <View style={styles.container}>
         <Text>First Screen</Text>
         <Button title='Second Screen' onPress={()=>this.navigateToView("SecondView")}/>
-        <Button title='Counter Screen' onPress={()=>this.navigateToView("App")}/>
+        <Button title='Counter Screen' onPress={()=>this.navigateToView("CounterView")}/>
       </View>
     )
   }
@@ -37,6 +39,18 @@ class FirstView extends Component {
       }
     })
   }
+
 }
 
+// function mapStateToProps(state) {
+//   console.log("MAPSTATETOPROPS: State")
+//   console.log(state)
+//   return {
+//     // this 'counter' will tie into this.props
+//     // so we can call it with this.props.counter
+//     counter: state.counter
+//   }
+// }
+
+//export default connect(mapStateToProps)(FirstView) 
 export default FirstView

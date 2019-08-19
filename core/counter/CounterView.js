@@ -1,5 +1,5 @@
 
-import React, { Fragment, Component } from "react"
+import React, { Fragment, Component } from 'react'
 import {
     View,
     Text,
@@ -8,15 +8,19 @@ import {
     SafeAreaView
 } from "react-native"
 import { connect } from 'react-redux'
-import { CounterAction } from '../../actions'
+import * as CounterActions from './CounterAction'
 import { styles } from './styles'
 // Props info: https://www.robinwieruch.de/react-pass-props-to-component/#react-props
 // Q: How do props get transferred from view to view?
 // doesnt seem like you have to instantiate the props
 class CounterView extends Component {
 
+  constructor(props) {
+    super(props)
+  }
+  
   render() {
-    console.log("----Props-----")
+    console.log("----Counter View Props-----")
     console.log(this.props)
     return (
       <Fragment>
@@ -57,5 +61,5 @@ function mapStateToProps(state) {
 // conects the props to the view
 // connects the state and dispatcher methods
 // params:
-//    CounterAction =  {increaseNumber, decreaseNumber}
-export default connect(mapStateToProps, CounterAction)(CounterView) 
+//    CounterActions =  {increaseNumber, decreaseNumber}
+export default connect(mapStateToProps, CounterActions)(CounterView) 
