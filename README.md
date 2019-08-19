@@ -1,3 +1,19 @@
+# About
+- Practice project to get the hang of React Native
+- Focusing on:
+  - [Component Life Cycle](/documentations/components/lifecycle.md)
+  - [SplashScreen](/core/splashscreen/README.md)
+  - [Navigation (RNN)](/documentations/navigation/navigation.md)
+  - Redux implementation
+  - [Scalable project structure](#project-structure)
+  - Debugging
+  - Presist data
+  - Network calls
+  - Shortcuts (VSCode Plugin)
+
+# VSCode Plugin
+- [React Native Snippet](https://marketplace.visualstudio.com/items?itemName=jundat95.react-native-snippet) - Pretty useful for creating dummy templates
+
 # Setup
  - `npm install`
 

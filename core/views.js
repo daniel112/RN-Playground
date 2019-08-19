@@ -1,7 +1,5 @@
-// we import > export so other files can access it through
-// import { some_module } from './core/views'
-// Q: is there a better way to import/export this?
 import { CounterView } from './counter'
+import  splashScreenView  from './splashscreen/splashscreenView'
 import FirstView from './first/FirstView'
 import SecondView from './second/SecondView'
 import React from 'react'
@@ -13,7 +11,7 @@ import { Navigation } from "react-native-navigation"
 //  - store - root redux store
 export function registerViews(store) {
   console.log("---Importing Views-----")
-
+  Navigation.registerComponent('splashScreenView', () => splashScreenView)
   Navigation.registerComponent('FirstView', () => FirstView)
   Navigation.registerComponent('SecondView', () => SecondView)
   
