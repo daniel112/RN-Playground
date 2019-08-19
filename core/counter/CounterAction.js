@@ -1,7 +1,4 @@
-import * as ActionTypes from '../actions/types'
-
-console.log("ActionTypes ACTIONS")
-console.log(ActionTypes)
+import * as ActionTypes from '../utils/types'
 
 // Public
 export const increaseCounter = () => {
@@ -17,8 +14,3 @@ export const decreaseCounter = () => {
     return dispatch({type: ActionTypes.DECREASE_COUNTER})
   }
 }
-
-// Q: Why does this not work?
-// export const decreaseCounter = () => {
-//   dispatch({type: ActionTypes.INCREASE_COUNTER})
-// }

@@ -1,5 +1,5 @@
 
-import { ActionTypes } from '../actions'
+import { ActionTypes } from '../utils'
 
 // the store, like the model
 const initialState = {

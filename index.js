@@ -1,18 +1,25 @@
-
-// import {AppRegistry} from 'react-native'
-// import {name as appName} from './app.json'
-//  import App from './App'
-// AppRegistry.registerComponent(appName, () => App);
-
 import { Navigation } from "react-native-navigation"
-import { FirstView, SecondView } from './core/views'
-import App from './App'
+import { registerViews } from './core/views'
+import { configureStore }  from './core/rootStore'
+import { Provider } from 'react-redux'
 
-// TODO: there should be a way to separate this registration portion out
-Navigation.registerComponent('FirstView', () => FirstView)
-Navigation.registerComponent('SecondView', () => SecondView)
-Navigation.registerComponent('App', () => App)
+// Entry point
+// 1. configure root store
+// 2. registers all views
+// 3. set the root view
+let reduxStore = configureStore()
+registerViews(reduxStore)
 
+// if you want to start on a single page app
+// Navigation.events().registerAppLaunchedListener(() => {
+//   Navigation.setRoot({
+//     root: {
+//       component: {
+//         name: 'FirstView'
+//       }
+//     }
+//   })
+// })
 // Ref - https://wix.github.io/react-native-navigation/#/docs/top-level-api
 // Setting up our Top Level Root 
 Navigation.events().registerAppLaunchedListener(() => {
