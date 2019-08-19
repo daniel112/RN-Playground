@@ -33,25 +33,25 @@ Why?:
 - ![](images/README_2019-08-19-10-30-16.png)
 
 NEW:<br>
-- /android - Native Android project <br>
-- /ios - Native iOS project <br> 
-- /core <br>
- &ensp; /components <br>
-  - shared components utilized all over the app
-- &ensp; /feature1 <br>
-  - featureReducer.js
-  - featureAction.js
-  - featureView.js
-- &ensp; /feature2 <br>
-- &ensp; /<feature#> <br>
-- &ensp; /utils<br>
-- &ensp; /network<br>
-- rootReducers.js
-  - instantiate all the reducers here
-- rootStore.js
-  - instantiate the store
-- views.js
-  - registration of views for Navigation (RNN)
+<pre>
+Directory structure:-  
+Entire JS specfic files are in core folder  
+├── core  
+│   ├── components                         <- shared components utilized all over the app    
+│   ├── *feature*                          <- Whatever feature you have    
+│   │   ├── index.js                 <- Entry point   
+│   │   ├── featureAction.js           <- feature Action 
+│   │   ├── featureReducer.js          <- feature Reducer
+│   │   ├── featureView.js             <- view/container
+│   │   ├── styles.js                  <- css stylesheet for this view
+│   ├── utils                             <- Utilities/globals/helpers/constants     
+│   │   ├── index.js    
+│   │   ├── types.js      
+│   ├── network                             <- Network related apis       
+│   ├── rootReducers.js                     <- instantiate all the reducers here     
+│   ├── rootStore.js                        <- instantiate the store      
+│   └── views.js                            <- registration of views for Navigation (RNN)
+</pre>
 
 OLD:<br>
 ~~/android - Native Android project <br>
