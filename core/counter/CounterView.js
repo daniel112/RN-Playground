@@ -18,7 +18,7 @@ class CounterView extends Component {
   constructor(props) {
     super(props)
   }
-  
+
   render() {
     console.log("----Counter View Props-----")
     console.log(this.props)

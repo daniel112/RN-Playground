@@ -1,7 +1,6 @@
 import { Navigation } from "react-native-navigation"
 import { registerViews } from './core/views'
 import { configureStore }  from './core/rootStore'
-import { Provider } from 'react-redux'
 
 // Entry point
 // 1. configure root store
